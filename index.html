@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nethpahan Udathara</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <body>
+    
+  <nav class="navbar">
+    <div class="logo">Nethpahan Udathara</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+      <button class="contact"><a href="#contact">Contact Me</a></button>
+  </nav>
+
+  <!-- Hero Section -->
+    <div class="herocontent">
+      <img class="profilepic" src="image1.jpg" alt="">
+      <h1>Nethpahan Udathara</h1>
+      <p>Aspiring AI & Web Developer</p>
+      <div class="icon">
+        <a href="https://web.facebook.com/profile.php?id=100089927951196" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/nethpahanudathara/?__pwa=1" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/NethpahanUdathara" target="_blank">
+              <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nethpahan-udathara-041b8737a/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.tiktok.com/@nethpahan2008" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+
+  <section id="about" class="aboutsection">
+    <h1>Hello,</h1> 
+     <p> I’m W.K.P Nethpahan Udathara<br>
+      <br>
+         I’m an aspiring AI & Web Developer <br>
+         with a passion for building smart, user-friendly <br>
+         applications. I love solving problems through technology <br>
+         and constantly learning new skills in coding and design.</p>
+    <blockquote>
+        "Code is like humor. When you have to explain it, it’s bad."
+    </blockquote>
+</section>
+
+<section id="aboutsub" class="aboutsub">
+  <div class="aboutsec">
+    <h2>About Me</h2>
+    <p class="onesec">
+      Hi, I’m <strong>Nethpahan Udathara</strong>, an aspiring<br>
+      AI & Web Developer. I have a strong passion for technology<br>
+      and love building smart, user-friendly applications. My goal<br>
+      is to combine creativity with technical expertise to solve<br>
+      problems and create meaningful digital experiences.<br>
+    </p>
+    <p class="twosec">
+      I’m currently learning advanced AI technologies,<br>
+      web development, and modern frameworks while working<br>
+      on exciting projects. Apart from coding, I enjoy continuous<br>
+      learning, exploring new tools, and enhancing my design skills.<br>
+    </p>
+  </div>
+  <div class="timeline scroll-animation">
+  <div class="timeline-item">
+    <div class="timeline-icon">🧒</div>
+    <div class="timeline-content">
+      <h3>Age 17yrs</h3>
+      <p><strong>Personal Milestone</strong></p>
+      <span>Born in 2008</span>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-icon">💻</div>
+    <div class="timeline-content">
+      <h3>Web Developer & AI Developer</h3>
+      <p><strong>Self-Driven Projects</strong></p>
+      <span>2024 – Present</span>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+<script>
+  // Select all elements with the scroll-animation class
+  const scrollElements = document.querySelectorAll(".scroll-animation");
+
+  // Check if element is in viewport
+  const elementInView = (el, dividend = 1.25) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+  };
+
+  // Add active class to element
+  const displayScrollElement = (element) => {
+    element.classList.add("active");
+  };
+
+  // Loop through elements and activate animation when in view
+  const handleScrollAnimation = () => {
+    scrollElements.forEach(el => {
+      if (elementInView(el)) {
+        displayScrollElement(el);
+      }
+    });
+  };
+
+  // Listen for scroll events
+  window.addEventListener("scroll", handleScrollAnimation);
+
+  // Trigger animations on page load
+  handleScrollAnimation();
+
+</script>
+
+</body>
+</html>
+
 
